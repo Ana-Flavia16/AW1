@@ -1,0 +1,307 @@
+/ * GLOBAL * /
+: root {
+    --dark-blue :  #363f5f ;
+    --verde :  #49aa26 ;
+    --light-green :  #3dd705 ;
+    --red :  # e92929 ;
+}
+
+* {
+    margem :  0 ;
+    preenchimento :  0 ;
+
+    dimensionamento da caixa : caixa de borda;
+}
+
+html {
+    tamanho da fonte :  93,75 % ;
+}
+
+corpo {
+    plano de fundo :  # f0f2f5 ;
+    família da fonte :  'Poppins' , sans-serif;
+}
+
+. sr-only {
+    posição : absoluta;
+    largura :  1 px ;
+    altura :  1 px ;
+    preenchimento :  0 ;
+    margem :  -1 px ;
+    estouro : oculto;
+    clipe :  rect ( 0 ,  0 ,  0 ,  0 );
+    espaço em branco : nowrap;
+    largura da borda :  0 ;
+}
+
+. container {
+    largura :  min ( 90 vw ,  800 px );
+
+    margem : automático;
+}
+
+/ * TITLES * /
+h2 {
+    margem superior :  3,2 rem ;
+    margem inferior :  0,8 rem ;
+    cor :  var ( - azul escuro );
+
+    peso da fonte : normal;
+}
+
+/ * LINKS & BUTTONS * /
+
+a {
+    cor :  var ( --verde );
+    decoração de texto : nenhum;
+}
+
+a : hover {
+    cor :  var ( --light-green );
+}
+
+botão {
+    largura :  100 % ;
+    altura :  50 px ;
+
+    fronteira : nenhum;
+
+    cor : branco;
+    fundo :  var ( --verde );
+
+    preenchimento :  0 ;
+
+    raio da borda :  0,25 rem ;
+
+    cursor : ponteiro;
+}
+
+botão : hover {
+    fundo :  var ( --light-green );
+}
+
+. botão . novo {
+    display : bloco embutido;
+    margem inferior :  0,8 rem ;
+}
+
+. botão . cancel {
+    cor :  var ( --red );
+    borda :  2 px  var ( --red ) sólido;
+    raio da borda :  0,25 rem ;
+
+    altura :  50 px ;
+
+    display : flex;
+    alinhar-itens : centro;
+    justificar o conteúdo : centro;
+
+    opacidade :  0,6 ;
+}
+
+. botão . cancelar : hover {
+    opacidade :  1 ;
+}
+
+/ * HEADER * /
+header {
+    plano de fundo :  # 2D4A22 ;
+    preenchimento :  2 rem  0  10 rem ;
+    alinhamento de texto : centro;
+}
+
+# logo {
+    cor :  # fff ;
+    peso da fonte :  100 ;
+}
+
+/* SALDO */
+# balance {
+    margem superior :  -8 rem ;
+}
+
+# balance  h2 {
+    cor : branco;
+    margem superior :  0 ;
+}
+
+/ * CARDS * /
+. card {
+    fundo : branco;
+    preenchimento :  1,5 rem  2 rem ;
+    raio da borda :  0,25 rem ;
+
+    margem inferior :  2 rem ;
+
+    cor :  var ( - azul escuro );
+}
+
+. cartão  h3 {
+    peso da fonte : normal;
+    tamanho da fonte :  1 rem ;
+
+    display : flex;
+    alinhar-itens : centro;
+    justify-content : espaço entre;
+}
+
+. card  p {
+    tamanho da fonte :  2 rem ;
+    altura da linha :  3 rem ;
+    espaço em branco : nowrap;
+
+    margem superior :  1 rem ;
+}
+
+. cartão . total {
+    fundo :  var ( --verde );
+    cor : branco;
+}
+
+/* TABELA */
+# transação {
+    display : bloco;
+    largura :  100 % ;
+    estouro-x : automático;
+}
+
+# data-table {
+    largura :  100 % ;
+    espaçamento entre bordas :  0  0,5 rem ;
+    cor :  # 969cb3 ;
+}
+
+mesa  thead  tr  th : primeiro filho ,
+table  tbody  tr  td : primeiro filho {
+    raio da borda :  0,25 rem  0  0  0,25 rem ;
+}
+
+mesa  thead  tr  th : último filho ,
+tabela  tbody  tr  td : último filho {
+    raio da borda :  0  0,25 rem  0,25 rem  0 ;
+}
+
+mesa  thead  th {
+    fundo : branco;
+
+    peso da fonte : normal;
+    preenchimento :  1 rem  2 rem ;
+
+    alinhamento de texto : esquerda;
+}
+
+table  tbody  tr {
+    opacidade :  0,7 ;
+}
+
+table  tbody  tr : hover {
+    opacidade :  1 ;
+}
+
+table  tbody  td {
+    fundo : branco;
+    preenchimento :  1 rem  2 rem ;
+}
+
+td . descrição {
+    cor :  var ( - azul escuro );
+}
+
+td . renda {
+    cor :  # 12a454 ;
+}
+
+td . despesa {
+    cor :  # e92929 ;
+}
+
+/ * MODAL * /
+. modal-overlay {
+    largura :  100 % ;
+    altura :  100 % ;
+
+    cor de fundo :  rgba ( 0 ,  0 ,  0 ,  0,7 );
+    posição : fixa;
+    topo :  0 ;
+
+    display : flex;
+    alinhar-itens : centro;
+    justificar o conteúdo : centro;
+
+    opacidade :  0 ;
+    visibilidade : oculto;
+
+    índice z :  999 ;
+}
+
+. sobreposição modal . ativo {
+    opacidade :  1 ;
+    visibilidade : visível;
+}
+
+. modal {
+    plano de fundo :  # f0f2f5 ;
+    preenchimento :  2,4 rem ;
+
+    posição : relativa;
+    índice z :  1 ;
+}
+
+/* FORMATO */
+# form {
+    largura máxima :  500 px ;
+}
+
+# form  h2 {
+    margem superior :  0 ;
+}
+
+input {
+    fronteira : nenhum;
+    raio da borda :  0,2 rem ;
+
+    preenchimento :  0,8 rem ;
+
+    largura :  100 % ;
+}
+
+. input-group {
+    margem superior :  0,8 rem ;
+}
+
+. grupo de entrada . ajuda {
+    opacidade :  0,4 ;
+}
+
+. grupo de entrada . ações {
+    display : flex;
+    justify-content : espaço entre;
+    alinhar-itens : centro;
+}
+
+. grupo de entrada . ações . botão ,
+. grupo de entrada . botão de ações  {
+    largura :  48 % ;
+}
+
+/ * FOOTER * /
+rodapé {
+    alinhamento de texto : centro;
+    preenchimento :  4 rem  0  2 rem ;
+    cor :  var ( - azul escuro );
+
+    opacidade :  0,6 ;
+}
+
+/ * RESPONSIVE * /
+@media ( largura mínima :  800 px ) {
+    html {
+        tamanho da fonte :  87,5 % ;
+    }
+    
+    # balance {
+        display : grade;
+        colunas de modelo de grade :  repetir ( 3 ,  1 fr );
+        lacuna :  2 rem ;
+    }
+}
